@@ -1,0 +1,170 @@
+{
+    "products": {
+        "coffee": {
+            "greek": [
+                {
+                    "name": "Traditional Greek Coffee",
+                    "blend": "70% Arabica – 30% Robusta",
+                    "description": "Rich foam, balanced aroma, lasting aftertaste.",
+                    "grainGrinding" : [ "Whole Beans", "Ground"],
+                    "price" : 2.50
+                    
+                },
+                {
+                    "name": "Special Greek Coffee",
+                    "blend": "70% Arabica – 30% Robusta",
+                    "description": "Rich foam, intense aroma, flavored aftertaste.",
+                    "grainGrinding" : [ "Whole Beans", "Ground"],
+                    "price" : 3.06
+                },
+                {
+                    "name": "Dark Roas tGreek Coffee",
+                    "blend": "80% Arabica – 20% Robusta",
+                    "description": "Rich foam, spicy aroma, rich body.",
+                    "grainGrinding" : [ "Whole Beans", "Ground"],
+                    "price" : 2.66
+                    
+                },
+                {
+                    "name": "LightRoastGreekCoffee",
+                    "blend": "80% Arabica – 20% Robusta",
+                    "description": "Good foam, complex aroma, light body.",
+                    "grainGrinding" : [ "Whole Beans", "Ground"],
+                    "price" : 2.66
+                    
+                }
+                
+                
+            ],
+            "filter": [
+                {
+                    "name": "Filter French Blend",
+                    "blend": "90% Arabica – 10% Robusta",
+                    "description": "Dark chocolate, nuts, medium sweetness, low acidity, coffee bitterness, good body, bittersweet aftertaste.",
+                    "grainGrinding" : ["Whole Beans", "Drip Method", "Aeropress", "French Pres", "Electric Machine"],
+                    "price" : 2.50
+                },
+                {
+                    "name": "Filter Flavored",
+                    "blend": "70% Arabica – 30% Robusta",
+                    "description": "Unique blend, flavored with special oils. The secret of excellence lies in both the quality of flavored oils and the flavoring process.",
+                    "Aromas": ["Ammaretto", "Vanilla", "Cinnamon-Hazelnut", "Hazelnut", "Cream Brulee", "Vanilla-Hazelnut", "Caramel-Hazelnut", "Chocolate-Orange", "Praline", "French Caramel", "Chocolate", "Chocolate-Hazelnut"],
+                    "grainGrinding" : ["Whole Beans", "Drip Method", "Aeropress", "French Pres", "Electric Machine"],                    
+                    "price" : 5.80
+                },
+                {
+                    "name": "Filter Classic Blend",
+                    "blend": "100% Arabica",
+                    "description": "Cocoa, nuts, citrus, high sweetness, medium-high acidity, full body, sweet and floral aftertaste.",
+                    "grainGrinding" : ["Whole Beans", "Drip Method", "Aeropress", "French Pres", "Electric Machine"],                    
+                    "price" : 4.32
+                },
+                {
+                    "name": "Filter Extra Blend",
+                    "blend": "80% Arabica – 20% Robusta",
+                    "description": "Dark chocolate, herbs, medium sweetness, low acidity, full body, bittersweet aftertaste.",
+                    "grainGrinding" : ["Whole Beans", "Drip Method", "Aeropress", "French Pres", "Electric Machine"],                    
+                    "price" : 4.20
+                }        
+            ],
+            "decaf": [
+                {
+                    "name": "Espresso DeCO2ffεε",
+                    "blend": "100% Arabica. Natural Liquid Carbon Dioxide Coffee Decaffenation Process.",
+                    "description": "Solid Cream, intense aroma (chocolate and nuts), medium acidity, high sweetness, oily body, sweet aftertaste with nutty notes.",
+                    "grainGrinding" : ["Whole Beans", "Drip Method", "Aeropress", "French Pres", "Electric Machine"],
+                    "price" : 5.36
+                },
+                {
+                    "name": "Greek Coffee DeCO2ffεε",
+                    "blend": "100% Arabica. 99,9% Natural Liquid Carbon Dioxide Coffee Decaffenation Process.",
+                    "description": "Thick Cream, rich aroma, low acidity, full body, pleasant bitterness with a bittersweet aftertaste.",
+                    "grainGrinding" : ["Whole Beans", "Drip Method", "Aeropress", "French Pres", "Electric Machine"],                    
+                    "price" : 5.80
+                },
+                {
+                    "name": "Filter DeCO2ffee",
+                    "blend": "100% Arabica. 99,9% Natural Liquid Carbon Dioxide Coffee Decaffeination Process.",
+                    "description": "Aroma of chocolate and nuts, low acidity, good sweetness and body, sweet aftertaste with notes of nuts.",
+                    "grainGrinding" : ["Whole Beans", "Drip Method", "Aeropress", "French Pres","Electric Machine"],
+                    "price" : 5.30  
+                },
+                {
+                    "name": "Flavored Filter DeCO2ffεε",
+                    "blend": "100% Arabica. 99,9% Natural Liquid Carbon.",
+                    "description": "Unique blend scented with special oils. The secret lies both in the quality of the oils and in the process that is used.",
+                    "grainGrinding" : ["Whole Beans", "Drip Method", "Aeropress", "French Pres", "Electric Machine"],                    
+                    "price" : 6.36  
+                }
+            ],
+            "capsules": [ 
+                {
+                    "name": "Capsule Espresso Coffee(10 pieces)",
+                    "description": "The great variety of espresso and filter coffee delivered with the well known quality of Coffee Island is now available in capsules. The flavor and taste of freshly ground coffee are captured in capsule until the moment they reach your cup.Enjoy the flavor and aroma of our freshly ground coffee at home, by using our capsules in your Nespresso machine.",
+                    "price" : 4.00
+                },
+                {
+                    "name": "Capsule Colombia Huila(10 pieces)",
+                    "description": "The great variety of espresso and filter coffee delivered with the well known quality of Coffee Island is now available in capsules. The flavor and taste of freshly ground coffee are captured in capsule until the moment they reach your cup.Enjoy the flavor and aroma of our freshly ground coffee at home, by using our capsules in your Nespresso machine.",
+                    "price" : 4.00
+                },
+                {
+                    "name": "Capsule Project Ethiopia Yirgacheffe(10 pieces)",
+                    "description": "The great variety of espresso and filter coffee delivered with the well known quality of Coffee Island is now available in capsules. The flavor and taste of freshly ground coffee are captured in capsule until the moment they reach your cup.Enjoy the flavor and aroma of our freshly ground coffee at home, by using our capsules in your Nespresso machine.",
+                    "price" : 4.00   
+                },
+                {
+                    "name": "Capsule Project DeCO2ffεε(10 pieces)",
+                    "description": "The great variety of espresso and filter coffee delivered with the well known quality of Coffee Island is now available in capsules. The flavor and taste of freshly ground coffee are captured in capsule until the moment they reach your cup.Enjoy the flavor and aroma of our freshly ground coffee at home, by using our capsules in your Nespresso machine.",
+                    "price" : 4.00  
+                }
+                
+            ]
+        },
+        "tea": [ 
+            {
+                "name": "Green Tea Gunpowder",
+                "description": "It is one of the most widely consumed beverages, an agricultural product derived from the tea plant Camellia Sinensis.  Each type of tea has its own unique taste characteristics, depending on the area it is grown, its fermentation and extraction method. It contains theine and benefits the nervous system.",
+                "price" : 5.80
+            },
+            {
+                "name": "English Breakfast",
+                "description": "It is one of the most widely consumed beverages, an agricultural product derived from the tea plant Camellia Sinensis.  Each type of tea has its own unique taste characteristics, depending on the area it is grown, its fermentation and extraction method. It contains theine and benefits the nervous system.",
+                "price" : 5.80   
+            },
+            {
+                "name": "Green Tea Passion Fruit",
+                "description": "It is one of the most widely consumed beverages, an agricultural product derived from the tea plant Camellia Sinensis.  Each type of tea has its own unique taste characteristics, depending on the area it is grown, its fermentation and extraction method. It contains theine and benefits the nervous system.",
+                "price" : 6.40   
+            },
+            {
+                "name": "Green Tea Jasmine",
+                "description": "It is one of the most widely consumed beverages, an agricultural product derived from the tea plant Camellia Sinensis.  Each type of tea has its own unique taste characteristics, depending on the area it is grown, its fermentation and extraction method. It contains theine and benefits the nervous system.",
+                "price" : 6.40  
+            }
+            
+        ],
+        "beverages": [
+            {
+                "name": "Milk Chocolate Caramel & Sea Salt",
+                "description": "The wonderful aroma and sweet taste of caramel blend with the salty flavor of salt, creating an unprecedented chocolate experience. An ideal choice for those looking for the different and delicious, even in their hot chocolate choices! ",
+                "price" : 4.20   
+            },
+            {
+                "name": "Chocolate Beverage With 0% Sugar",
+                "description":  "For those who follow a healthy diet, this chocolate with 0% sugar is the ideal choice. The wonderful taste of chocolate in your cup, without the remorse of sugar! "                ,
+                "price" : 3.70   
+            },
+            {
+                "name": "Flavored Strawberry Chocolate",
+                "description": "Coffee Island coffee shops add the chocolate and you the fresh milk.",
+                "price" : 3.20    
+            },
+            {
+                "name": "White Chocolate",
+                "description": "Coffee Island coffee shops add the chocolate and you the fresh milk.",
+                "price" : 3.70   
+            }
+        ]
+    }
+}
