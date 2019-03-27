@@ -70,6 +70,9 @@ body div.card:hover::before {
 body div.card span {
   position: relative;
 }
+body a:hover {
+  text-decoration: none;
+}
 body a {
   text-decoration: none;
 }
@@ -276,6 +279,40 @@ body div.about img {
   width: 10%;
 }
 body .container p {
+  color: #675A49;
+}
+body div.heroContact {
+  height: 300px;
+  width: 100%;
+  position: static;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/about.jpg);
+}
+body .prodOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body .prodOverlay .itemLightbox {
+  height: 600px;
+  width: 60%;
+  background-color: #fff;
+}
+body .prodOverlay .itemLightbox .container img {
+  height: 300px;
+  margin: 0 auto;
+}
+body .prodOverlay .itemLightbox p {
+  text-align: center;
   color: #675A49;
 }
 
