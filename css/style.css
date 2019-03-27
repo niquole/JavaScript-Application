@@ -9,6 +9,26 @@ body .headerLogo img {
   margin-right: auto;
   width: 80px;
 }
+body .vector {
+  position: absolute;
+  width: 110px;
+  height: 50px;
+  top: 40px;
+  right: 50px;
+}
+body .vector svg {
+  width: 50px;
+  position: relative;
+  right: -20px;
+}
+body .vector div span {
+  color: #675A49;
+  font-size: 13px;
+  font-weight: bold;
+}
+body .vector div a {
+  color: #fff;
+}
 body nav ul {
   margin: 0;
   padding: 0;
@@ -314,6 +334,60 @@ body .prodOverlay .itemLightbox .container img {
 body .prodOverlay .itemLightbox p {
   text-align: center;
   color: #675A49;
+}
+body .signupSection {
+  background: url(../img/signup.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 450px;
+  margin-bottom: 300px;
+  text-align: center;
+  display: flex;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+body .info {
+  width: 50%;
+  padding: 30px 0;
+  border-right: 5px solid rgba(30, 30, 30, 0.8);
+}
+body .inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 3px solid #C4BCAD;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: white;
+  color: #675A49;
+  outline: none;
+}
+body .noBullet {
+  list-style-type: none;
+  left: 25%;
+}
+body #signUp {
+  border: 1px solid #C4BCAD;
+  color: #675A49;
+  font-size: 18px;
+  background-color: #C4BCAD;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+body #signUp:hover {
+  background-color: #C4BCAD;
+  color: #fff;
+  padding: 10px 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

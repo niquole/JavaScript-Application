@@ -1,0 +1,41 @@
+head {
+    .headerLogo img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80px;
+        
+    }
+    nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        li { display: inline-block; }
+        
+        a {
+            display: block;
+            padding: 10px 12px;
+            text-decoration: none;
+            @include darkCol;
+            font-size: 18px;
+            font-family: Verdana, Geneva, sans-serif;
+            // font-weight: bold;
+            transition: .3s;
+            border-bottom: 2px solid transparent;
+        }
+        
+        a:hover {
+            border-bottom: 2px solid white;
+            @include lightColWhite;
+            transition: .3s;
+            text-decoration: none;
+            
+            
+        }
+    }
+}
