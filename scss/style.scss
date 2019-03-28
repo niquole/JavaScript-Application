@@ -14,467 +14,478 @@ body {
     }
     
     .vector {
-        svg {
-            width: 50px;
-            position: relative;
-            right: -20px;
-        }
         position: absolute;
         width: 110px;
         height: 50px;
         top: 40px;
         right: 50px;
-        div {
-            span {
-                @include darkCol;
-                font-size: 13px;
-                font-weight: bold;
+        svg {
+            width: 50px;
+            position: relative;
+            right: -20px;
+            
+        }
+        // div a svg:hover {
+            //     animation: color 1s infinite;
+            // }
+            
+            // @keyframes color {
+                //     0% {background-color: #675A49};
+                //     100% {background-color: #ffffff};   
+                // }
+                
+                div {
+                    span {
+                        @include darkCol;
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                    a {
+                        @include lightColWhite;
+                    } 
+                    //    text-align: center;
+                }
+            }
+            nav {
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                
+                li { display: inline-block; }
+                
+                a {
+                    display: block;
+                    padding: 10px 12px;
+                    text-decoration: none;
+                    @include darkCol;
+                    font-size: 18px;
+                    font-family: Verdana, Geneva, sans-serif;
+                    // font-weight: bold;
+                    transition: .3s;
+                    border-bottom: 2px solid transparent;
+                }
+                
+                a:hover {
+                    border-bottom: 2px solid white;
+                    @include lightColWhite;
+                    transition: .3s;
+                    text-decoration: none;
+                    
+                    
+                }
+            }
+            // HOME PAGE
+            div.card {
+                width: 100%;
+                height: 550px;
+                margin: 0 auto;
+                padding: 0;
+                position: relative;
+            }
+            .products.card::before {
+                background-image: url(../img/productsHome.jpg);
+                
+            }
+            .franchise::before {
+                background-image: url(../img/franchiseHome.jpg);
+                
+            }
+            .shops::before {
+                background-image: url(../img/shopsHome.jpg);
+            }
+            
+            div.card::before {
+                transition: .3s;
+                content: "";
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+            }
+            div.card:hover::before {
+                filter: blur(2px);
+                -webkit-filter: blur(2px);
+            }
+            
+            div.card span {
+                position: relative;
+                
+            }
+            a:hover {
+                text-decoration: none;
+                
             }
             a {
-                @include lightColWhite;
-            } 
-            //    text-align: center;
-        }
-    }
-    nav {
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        li { display: inline-block; }
-        
-        a {
-            display: block;
-            padding: 10px 12px;
-            text-decoration: none;
-            @include darkCol;
-            font-size: 18px;
-            font-family: Verdana, Geneva, sans-serif;
-            // font-weight: bold;
-            transition: .3s;
-            border-bottom: 2px solid transparent;
-        }
-        
-        a:hover {
-            border-bottom: 2px solid white;
-            @include lightColWhite;
-            transition: .3s;
-            text-decoration: none;
+                text-decoration: none;
+                div:hover {
+                    
+                    span {
+                        @include darkCol;
+                        @include backCol;
+                        width: 100%;
+                    }
+                }
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    // justify-content: center;
+                    
+                    span {
+                        display: block;
+                        transition: .3s;
+                        font-size: 25px;
+                        @include lightCol;
+                        @include darkBackCol;
+                        font-family: Verdana, Geneva, sans-serif;
+                        width: 13%;
+                        text-align: center;
+                        height: 40px;
+                        margin: 0 auto;
+                        margin-top: 10%;
+                    }
+                }
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
             
-            
-        }
-    }
-    // HOME PAGE
-    div.card {
-        width: 100%;
-        height: 550px;
-        margin: 0 auto;
-        padding: 0;
-        position: relative;
-    }
-    .products.card::before {
-        background-image: url(../img/productsHome.jpg);
-        
-    }
-    .franchise::before {
-        background-image: url(../img/franchiseHome.jpg);
-        
-    }
-    .shops::before {
-        background-image: url(../img/shopsHome.jpg);
-    }
-    
-    div.card::before {
-        transition: .3s;
-        content: "";
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        
-    }
-    div.card:hover::before {
-        filter: blur(2px);
-        -webkit-filter: blur(2px);
-    }
-    
-    div.card span {
-        position: relative;
-        
-    }
-    a:hover {
-        text-decoration: none;
-        
-    }
-    a {
-        text-decoration: none;
-        div:hover {
-            
-            span {
-                @include darkCol;
+            .dropdown-content {
+                display: none;
+                position: absolute;
                 @include backCol;
-                width: 100%;
+                width: 120px;
+                // max-height: 300px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 5px;
+                z-index: 1;
             }
-        }
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            // justify-content: center;
-            
-            span {
+            .dropdown:hover .dropdown-content {
+                a {
+                    font-size: 16px;
+                }
                 display: block;
-                transition: .3s;
+            }
+            
+            // FOOTER
+            .footer {
+                position: static;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @include backCol;
+                img {
+                    display: block;
+                    margin-left: 25px;
+                    margin-top: 5px;
+                    margin-right: auto;
+                    width: 50px;
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    display: inline-block;
+                    
+                }
+            }
+            .fa {
+                padding: 5px;
                 font-size: 25px;
-                @include lightCol;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 5px;
+                transition: .5s;
+            }
+            .fa:hover {
+                background-color: white;
+                @include darkCol;
+                border-radius: 50%;
+                
+            }
+            
+            .fa-facebook {
+                border-radius: 50%;
                 @include darkBackCol;
-                font-family: Verdana, Geneva, sans-serif;
-                width: 13%;
-                text-align: center;
-                height: 40px;
-                margin: 0 auto;
-                margin-top: 10%;
+                @include lightCol;
             }
-        }
-    }
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        @include backCol;
-        width: 120px;
-        // max-height: 300px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 5px;
-        z-index: 1;
-    }
-    .dropdown:hover .dropdown-content {
-        a {
-            font-size: 16px;
-        }
-        display: block;
-    }
-    
-    // FOOTER
-    .footer {
-        position: static;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        @include backCol;
-        img {
-            display: block;
-            margin-left: 25px;
-            margin-top: 5px;
-            margin-right: auto;
-            width: 50px;
-        }
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: inline-block;
             
-        }
-    }
-    .fa {
-        padding: 5px;
-        font-size: 25px;
-        width: 35px;
-        height: 35px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 5px;
-        transition: .5s;
-    }
-    .fa:hover {
-        background-color: white;
-        @include darkCol;
-        border-radius: 50%;
-        
-    }
-    
-    .fa-facebook {
-        border-radius: 50%;
-        @include darkBackCol;
-        @include lightCol;
-    }
-    
-    .fa-twitter {
-        border-radius: 50%;
-        @include darkBackCol;
-        @include lightCol;
-    }
-    .fa-instagram {
-        border-radius: 50%;
-        @include darkBackCol;
-        @include lightCol;
-    }
-    
-    
-    div.heroProd {
-        // margin-top: 162px;
-        height: 300px;
-        width: 100%;
-        position: static;
-        // top: 0;
-        // left: 0;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url(../img/products.jpg);
-    }
-    div.gallery {
-        border: 1px solid #ccc;
-        // margin-bottom: 200px;
-        
-    }
-    
-    div.gallery:hover {
-        border: 1px solid #675A49;
-    }
-    
-    div.gallery img {
-        width: 100%;
-        height: auto;
-    }
-    
-    div.desc {
-        padding: 15px;
-        text-align: center;
-    }
-    
-    * {
-        box-sizing: border-box;
-    }
-    
-    .responsive {
-        padding: 0;
-        float: left;
-        width: 25%;
-    }
-    
-    div.heroFranch {
-        // margin-top: 162px;
-        height: 300px;
-        width: 100%;
-        position: static;
-        // top: 0;
-        // left: 0;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url(../img/franchiseHome.jpg);
-    }
-    
-    .franchiseContainer {
-        @include darkBackCol;
-        @include lightColWhite;
-        height: 700px;
-        text-align: center;
-        span {
-            display: block;
-            padding: 20px;
-            font-size: 25px;
+            .fa-twitter {
+                border-radius: 50%;
+                @include darkBackCol;
+                @include lightCol;
+            }
+            .fa-instagram {
+                border-radius: 50%;
+                @include darkBackCol;
+                @include lightCol;
+            }
             
-        }
-        span.price {
-            @include darkCol;
-        }
-        a {
-            display: block;
-            text-decoration: none;
-            font-size: 30px;
-            background-color: #fff;
-            @include darkCol;
-            padding: 10px;
-            transition: .3s;
-        }
-        a:hover {
-            @include lightColWhite;
-            @include darkBackCol;
-        }
-        p {
-            margin-top: 100px;
-            @include backCol;
-            height: 500px;
-        }
-    }
-    div.heroAbout {
-        // margin-top: 162px;
-        height: 300px;
-        width: 100%;
-        position: static;
-        // top: 0;
-        // left: 0;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url(../img/about.jpg);
-    }
-    div.overlay {
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, .6);
-        display: none;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    div.gallery .item img {
-        width: 300px;
-        
-        display: inline-block;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        
-    } 
-    div.about img {
-        display: block;
-        margin: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 10%;
-    }
-    .container p {
-        @include darkCol;
-    }
-    div.heroContact {
-        height: 300px;
-        width: 100%;
-        position: static;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url(../img/about.jpg);
-    }
-    
-    .prodOverlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        background-color: rgba(0, 0, 0, .6);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        
-        
-        .itemLightbox {
-            height: 600px;
-            width: 60%;
-            background-color: #fff;
-            .container img {
+            
+            div.heroProd {
+                // margin-top: 162px;
                 height: 300px;
-                margin: 0 auto;
+                width: 100%;
+                position: static;
+                // top: 0;
+                // left: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../img/products.jpg);
+            }
+            div.gallery {
+                border: 1px solid #ccc;
+                // margin-bottom: 200px;
+                
             }
             
-            p {
+            div.gallery:hover {
+                border: 1px solid #675A49;
+            }
+            
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+            
+            div.desc {
+                padding: 15px;
                 text-align: center;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            .responsive {
+                padding: 0;
+                float: left;
+                width: 25%;
+            }
+            
+            div.heroFranch {
+                // margin-top: 162px;
+                height: 300px;
+                width: 100%;
+                position: static;
+                // top: 0;
+                // left: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../img/franchiseHome.jpg);
+            }
+            
+            .franchiseContainer {
+                @include darkBackCol;
+                @include lightColWhite;
+                height: 700px;
+                text-align: center;
+                span {
+                    display: block;
+                    padding: 20px;
+                    font-size: 25px;
+                    
+                }
+                span.price {
+                    @include darkCol;
+                }
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 30px;
+                    background-color: #fff;
+                    @include darkCol;
+                    padding: 10px;
+                    transition: .3s;
+                }
+                a:hover {
+                    @include lightColWhite;
+                    @include darkBackCol;
+                }
+                p {
+                    margin-top: 100px;
+                    @include backCol;
+                    height: 500px;
+                }
+            }
+            div.heroAbout {
+                // margin-top: 162px;
+                height: 300px;
+                width: 100%;
+                position: static;
+                // top: 0;
+                // left: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../img/about.jpg);
+            }
+            div.overlay {
+                position: fixed;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0, 0, 0, .6);
+                display: none;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            
+            div.gallery .item img {
+                width: 300px;
+                
+                display: inline-block;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                
+            } 
+            div.about img {
+                display: block;
+                margin: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 10%;
+            }
+            .container p {
                 @include darkCol;
             }
+            div.heroContact {
+                height: 300px;
+                width: 100%;
+                position: static;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../img/about.jpg);
+            }
+            
+            .prodOverlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100vw;
+                background-color: rgba(0, 0, 0, .6);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+                
+                .itemLightbox {
+                    height: 600px;
+                    width: 60%;
+                    background-color: #fff;
+                    .container img {
+                        height: 300px;
+                        margin: 0 auto;
+                    }
+                    
+                    p {
+                        text-align: center;
+                        @include darkCol;
+                    }
+                    
+                    
+                }
+            }
             
             
+            
+            
+            // SIGN UP
+            .signupSection {
+                background: url(../img/signup.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                top: 300px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 800px;
+                height: 450px;
+                margin-bottom: 300px;
+                text-align: center;
+                display: flex;
+                color: white;
+                box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+                h2 {
+                    
+                }
+            }
+            
+            .info {
+                width: 50%;
+                // background: rgba(20, 20, 20, .8);
+                padding: 30px 0;
+                border-right: 5px solid rgba(30, 30, 30, .8);
+            }
+            
+            .inputFields {
+                margin: 15px 0;
+                font-size: 16px;
+                padding: 10px;
+                width: 250px;
+                border: 3px solid #C4BCAD;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                background-color: white;
+                @include darkCol;
+                outline: none;
+            }
+            .noBullet {
+                list-style-type: none;
+                // padding-right: 50px;
+                left: 25%;
+                
+            }
+            
+            #signUp {
+                border: 1px solid #C4BCAD;
+                @include darkCol;
+                font-size: 18px;
+                @include backCol;
+                margin-top: 20px;
+                padding: 10px 50px;
+                cursor: pointer;
+                transition: .4s;
+                &:hover {
+                    @include backCol;
+                    @include lightColWhite;
+                    padding: 10px 80px;
+                }
+            }
         }
-    }
-
-
-
-
-    // SIGN UP
-    .signupSection {
-        background: url(../img/signup.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-        top: 300px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 800px;
-        height: 450px;
-        margin-bottom: 300px;
-        text-align: center;
-        display: flex;
-        color: white;
-        box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
-        h2 {
         
-        }
-    }
-    
-    .info {
-        width: 50%;
-        // background: rgba(20, 20, 20, .8);
-        padding: 30px 0;
-        border-right: 5px solid rgba(30, 30, 30, .8);
-    }
-    
-    .inputFields {
-        margin: 15px 0;
-        font-size: 16px;
-        padding: 10px;
-        width: 250px;
-        border: 3px solid #C4BCAD;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        background-color: white;
-        @include darkCol;
-        outline: none;
-    }
-    .noBullet {
-        list-style-type: none;
-        // padding-right: 50px;
-        left: 25%;
-
-    }
-    
-    #signUp {
-        border: 1px solid #C4BCAD;
-        @include darkCol;
-        font-size: 18px;
-        @include backCol;
-        margin-top: 20px;
-        padding: 10px 50px;
-        cursor: pointer;
-        transition: .4s;
-        &:hover {
-            @include backCol;
-            @include lightColWhite;
-            padding: 10px 80px;
-        }
-    }
-}
-
-
-// on span
-// // 60% 
-//  fontsize 240%
-//  boxsizing border ::-webkit-validation-bubble-text-blockpadding 200 px
-// backcol rgba ff alpha 0.4
-// remove margin top
-
-
+        
+        // on span
+        // // 60% 
+        //  fontsize 240%
+        //  boxsizing border ::-webkit-validation-bubble-text-blockpadding 200 px
+        // backcol rgba ff alpha 0.4
+        // remove margin top
+        
+        
+        
