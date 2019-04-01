@@ -330,31 +330,60 @@ body .prodOverlay .itemLightbox {
   height: 600px;
   background-color: #fff;
 }
-body .prodOverlay .itemLightbox .itemImg {
-  background-image: url(../img/CoffeeCircua.png);
-  height: 400px;
-  width: 300px;
-  margin: 0 auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 50px;
+body .prodOverlay .productImg img {
+  height: 300px;
+  margin-top: 10%;
 }
-body .prodOverlay .itemLightbox .itemName, body .prodOverlay .itemLightbox .blend, body .prodOverlay .itemLightbox .itemDesc, body .prodOverlay .itemLightbox .grain, body .prodOverlay .itemLightbox .price {
-  color: #675A49;
-  font-size: 22px;
-  padding: 0;
-  margin: 0;
+body .prodOverlay .productDetail {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  height: 100%;
+  text-align: center;
+  padding: 0 5%;
 }
-body .prodOverlay .itemLightbox .buy {
-  width: 200px;
-  height: 50px;
-  background-color: pink;
+body .prodOverlay .productTitle {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+body .prodOverlay .productPrice {
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+body .prodOverlay .productDesc {
+  font-weight: 300;
+  font-size: 0.75rem;
+  color: #B9B8B6;
+  margin-bottom: 2rem;
+  padding: 0 4rem;
+}
+body .prodOverlay .productButton {
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: #F1EDE4;
   display: block;
-  margin-left: 430px;
-  margin-top: 200px;
+  width: 8rem;
+  height: 2rem;
+  font-size: 0.75rem;
+  color: #513F35;
+  transition: 0.32s;
 }
-body .signupSection {
+body .prodOverlay .productButton span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 2rem;
+  transition: 0.32s;
+}
+body .prodOverlay .signupSection {
   background: url(../img/signup.jpg);
   background-size: cover;
   background-position: center;
@@ -371,12 +400,12 @@ body .signupSection {
   color: white;
   box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
 }
-body .info {
+body .prodOverlay .info {
   width: 50%;
   padding: 30px 0;
   border-right: 5px solid rgba(30, 30, 30, 0.8);
 }
-body .inputFields {
+body .prodOverlay .inputFields {
   margin: 15px 0;
   font-size: 16px;
   padding: 10px;
@@ -389,11 +418,11 @@ body .inputFields {
   color: #675A49;
   outline: none;
 }
-body .noBullet {
+body .prodOverlay .noBullet {
   list-style-type: none;
   left: 25%;
 }
-body #signUp {
+body .prodOverlay #signUp {
   border: 1px solid #C4BCAD;
   color: #675A49;
   font-size: 18px;
@@ -403,7 +432,7 @@ body #signUp {
   cursor: pointer;
   transition: 0.4s;
 }
-body #signUp:hover {
+body .prodOverlay #signUp:hover {
   background-color: #C4BCAD;
   color: #fff;
   padding: 10px 80px;
