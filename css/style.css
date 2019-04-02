@@ -327,12 +327,12 @@ body .prodOverlay {
   align-items: center;
 }
 body .prodOverlay .itemLightbox {
-  height: 600px;
+  height: 500px;
   background-color: #fff;
 }
 body .prodOverlay .productImg img {
   height: 300px;
-  margin-top: 10%;
+  margin: 20px;
 }
 body .prodOverlay .productDetail {
   display: flex;
@@ -342,7 +342,7 @@ body .prodOverlay .productDetail {
   width: 48%;
   height: 100%;
   text-align: center;
-  padding: 0 5%;
+  padding: 20px 5px;
 }
 body .prodOverlay .productTitle {
   font-size: 1.8rem;
@@ -350,19 +350,17 @@ body .prodOverlay .productTitle {
 }
 body .prodOverlay .productPrice {
   letter-spacing: 2px;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 body .prodOverlay .productDesc {
   font-weight: 300;
-  font-size: 0.75rem;
+  font-size: 18px;
   color: #B9B8B6;
-  margin-bottom: 2rem;
-  padding: 0 4rem;
 }
 body .prodOverlay .productButton {
   position: relative;
-  overflow: hidden;
-  margin-top: 2rem;
+  margin-top: -100px;
+  margin-left: 465px;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
@@ -376,14 +374,14 @@ body .prodOverlay .productButton {
 }
 body .prodOverlay .productButton span {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 20px;
   width: 100%;
   height: 100%;
   line-height: 2rem;
   transition: 0.32s;
 }
-body .prodOverlay .signupSection {
+body .signupSection {
   background: url(../img/signup.jpg);
   background-size: cover;
   background-position: center;
@@ -400,12 +398,12 @@ body .prodOverlay .signupSection {
   color: white;
   box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
 }
-body .prodOverlay .info {
+body .info {
   width: 50%;
   padding: 30px 0;
   border-right: 5px solid rgba(30, 30, 30, 0.8);
 }
-body .prodOverlay .inputFields {
+body .inputFields {
   margin: 15px 0;
   font-size: 16px;
   padding: 10px;
@@ -418,11 +416,11 @@ body .prodOverlay .inputFields {
   color: #675A49;
   outline: none;
 }
-body .prodOverlay .noBullet {
+body .noBullet {
   list-style-type: none;
   left: 25%;
 }
-body .prodOverlay #signUp {
+body #signUp {
   border: 1px solid #C4BCAD;
   color: #675A49;
   font-size: 18px;
@@ -432,7 +430,7 @@ body .prodOverlay #signUp {
   cursor: pointer;
   transition: 0.4s;
 }
-body .prodOverlay #signUp:hover {
+body #signUp:hover {
   background-color: #C4BCAD;
   color: #fff;
   padding: 10px 80px;

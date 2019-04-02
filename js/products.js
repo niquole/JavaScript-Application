@@ -44,5 +44,3 @@ req.onload = function() {
 req.open("GET", "https://api.myjson.com/bins/1ep0ie");
 
 req.send();
-
-
