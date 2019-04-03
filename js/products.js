@@ -1,44 +1,62 @@
-
 var req = new XMLHttpRequest();
 
 
+req.onclick = function () {
+  var res = JSON.parse(req.responseText);
+  // addEventListener(onclick)
+  
+  document.getElementById('prodOverlay').style.display = "block";
+  var coffee = res.products.coffee;
+  document.getElementById('productTittle').innerHTML = document.createTextNode(greek[i].name);
+}
+
 req.onload = function() {
   var res = JSON.parse(req.responseText);
-  
-  var greek = res.products.coffee.greek;
-  
-  for (let i=0; i < greek.length; i++) {
-    var container = document.createElement('li');
-    var containerText = document.createTextNode('');
-    var ele = document.createElement('h2');
-    var text = document.createTextNode(greek[i].name);
-    ele.appendChild(text);
-    
-    var greekBlend = document.createElement('p');
-    var greekBlendText = document.createTextNode(greek[i].blend);
-    greekBlend.appendChild(greekBlendText);
+
+  var coffee = res.products.coffee;
+  for (let x=0; x < coffee.length; x++) {
+    for (let i=0; i < coffee[i].length; i++) {
+      var item = document.createElement('div');
+
+      item.dataset.name = coffee[x][i].name;  
+      item.dataset.blend = coffee[x][i].blend;    
+      item.dataset.desc = coffee[x][i].desc;
+      item.dataset.grain = coffee[x][i].grain;
+      item.dataset.price = coffee[x][i].price;    
 
 
-    var greekDesc = document.createElement('p');
-    var greekDescText = document.createTextNode(greek[i].description);
-    greekDesc.appendChild(greekDescText);
-    
-    var greekGrainGrinding = document.createElement('p');
-    var greekGrainGrindingText = document.createTextNode(greek[i].grainGrinding[0]);
-    greekGrainGrinding.appendChild(greekGrainGrindingText);
+      // var itemText = document.createTextNode('');
+      // var ele = document.createElement('h2');
+      // var text = document.createTextNode(coffee[x][i].name);
+      // ele.appendChild(text);
 
-    var greekPrice = document.createElement('p');
-    var GreekPriceText = document.createTextNode(greek[i].price);
-    greekPrice.appendChild(GreekPriceText);
+      var greekBlend = document.createElement('p');
+      var greekBlendText = document.createTextNode(coffee[x][i].blend);
+      greekBlend.appendChild(greekBlendText);
 
-    container.appendChild(ele);
-    container.appendChild(greekDesc);
-    container.appendChild(greekBlend);
-    container.appendChild(greekGrainGrinding);
-    container.appendChild(greekPrice);
-    document.querySelector('.greek').appendChild(container);
+
+      var greekDesc = document.createElement('p');
+      var greekDescText = document.createTextNode(coffee[x][i].description);
+      greekDesc.appendChild(greekDescText);
+
+      var greekGrainGrinding = document.createElement('p');
+      var greekGrainGrindingText = document.createTextNode(coffee[x][i].grainGrinding[0]);
+      greekGrainGrinding.appendChild(greekGrainGrindingText);
+
+      var greekPrice = document.createElement('p');
+      var GreekPriceText = document.createTextNode(coffee[x][i].price);
+      greekPrice.appendChild(GreekPriceText);
+
+      item.appendChild(ele);
+      item.appendChild(greekDesc);
+      item.appendChild(greekBlend);
+      item.appendChild(greekGrainGrinding);
+      item.appendChild(greekPrice);
+      document.querySelector('.container').appendChild(item);
+    }
   }
 }
+
 
 
 req.open("GET", "https://api.myjson.com/bins/1ep0ie");

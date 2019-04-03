@@ -318,21 +318,22 @@ body div.heroContact {
   background-image: url(../img/about.jpg);
 }
 body .prodOverlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
   align-items: center;
 }
 body .prodOverlay .itemLightbox {
+  display: none;
   height: 500px;
   background-color: #fff;
 }
 body .prodOverlay .productImg img {
   height: 300px;
-  margin: 20px;
+  margin: 25% 30px;
 }
 body .prodOverlay .productDetail {
   display: flex;
@@ -342,40 +343,39 @@ body .prodOverlay .productDetail {
   width: 48%;
   height: 100%;
   text-align: center;
-  padding: 20px 5px;
+  padding: 10% 30px;
 }
 body .prodOverlay .productTitle {
   font-size: 1.8rem;
   margin-bottom: 2rem;
+  color: #675A49;
 }
 body .prodOverlay .productPrice {
   letter-spacing: 2px;
-  margin-bottom: 20px;
+  font-size: 25px;
+  color: #675A49;
+  margin: 20px;
+  font-weight: 500px;
 }
 body .prodOverlay .productDesc {
-  font-weight: 300;
   font-size: 18px;
-  color: #B9B8B6;
+  color: #675A49;
 }
 body .prodOverlay .productButton {
-  position: relative;
-  margin-top: -100px;
+  margin-top: -60px;
   margin-left: 465px;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  background: #F1EDE4;
-  display: block;
-  width: 8rem;
+  background-color: #C4BCAD;
+  width: 150px;
   height: 2rem;
   font-size: 0.75rem;
   color: #513F35;
   transition: 0.32s;
 }
 body .prodOverlay .productButton span {
-  position: absolute;
-  top: 0px;
-  left: 20px;
+  margin: 15%;
   width: 100%;
   height: 100%;
   line-height: 2rem;
@@ -406,7 +406,7 @@ body .info {
 body .inputFields {
   margin: 15px 0;
   font-size: 16px;
-  padding: 10px;
+  padding: 15px;
   width: 250px;
   border: 3px solid #C4BCAD;
   border-top: none;
