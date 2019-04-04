@@ -393,7 +393,7 @@ body {
         
         
         .itemLightbox {
-            display: none;
+            // display: none;
             height: 500px;
             background-color: #fff;
         }
@@ -408,7 +408,7 @@ body {
             flex-flow: column;
             justify-content: center;
             align-items: center;
-            width: 48%;
+            // width: 48%;
             height: 100%;
             text-align: center;
             padding: 10% 30px;
@@ -431,8 +431,8 @@ body {
         }
         .productButton {
             // position: relative;
-            margin-top: -60px;
-            margin-left: 465px;
+            // margin-top: -60px;
+            // margin-left: 465px;
             text-decoration: none;
             text-transform: uppercase;
             border-radius: 4px;

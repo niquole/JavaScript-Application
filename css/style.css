@@ -327,7 +327,6 @@ body .prodOverlay {
   align-items: center;
 }
 body .prodOverlay .itemLightbox {
-  display: none;
   height: 500px;
   background-color: #fff;
 }
@@ -340,7 +339,6 @@ body .prodOverlay .productDetail {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 48%;
   height: 100%;
   text-align: center;
   padding: 10% 30px;
@@ -362,8 +360,6 @@ body .prodOverlay .productDesc {
   color: #675A49;
 }
 body .prodOverlay .productButton {
-  margin-top: -60px;
-  margin-left: 465px;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
