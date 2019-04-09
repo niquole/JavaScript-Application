@@ -24,6 +24,7 @@ req.onload = function() {
   var res = JSON.parse(req.responseText);
   
   var coffee = res.products.coffee;
+  var tea = res.products.tea;
   for (var x=0; x < coffee.length; x++) {
     var keys = Object.keys(coffee[x]);
     var values = Object.values(coffee[x])[0];
@@ -32,50 +33,78 @@ req.onload = function() {
       var item = document.createElement('div');
       
       item.dataset.name = Object.values(values)[i].name;
-      item.innerHTML = 'aasdasdasdas';
-      // item.dataset.blend = coffee[x][i].blend;    
-      // item.dataset.desc = coffee[x][i].desc;
-      // item.dataset.grain = coffee[x][i].grain;
-      // item.dataset.price = coffee[x][i].price;    
-      
+      item.dataset.desc = Object.values(values)[i].blend;
+      item.dataset.desc = Object.values(values)[i].description;
+      item.dataset.desc = Object.values(values)[i].grainGrinding;
+      item.dataset.price = Object.values(values)[i].price;
+      item.innerHTML = '';
       item.classList.add("responsive");
-      
-      
-      // var itemText = document.createTextNode('');
-      // var ele = document.createElement('h2');
-      // var text = document.createTextNode(coffee[x][i].name);
-      // ele.appendChild(text);
-      
-      // var greekBlend = document.createElement('p');
-      // var greekBlendText = document.createTextNode(coffee[x][i].blend);
-      // greekBlend.appendChild(greekBlendText);
-      
-      
-      // var greekDesc = document.createElement('p');
-      // var greekDescText = document.createTextNode(coffee[x][i].description);
-      // greekDesc.appendChild(greekDescText);
-      
-      // var greekGrainGrinding = document.createElement('p');
-      // var greekGrainGrindingText = document.createTextNode(coffee[x][i].grainGrinding[0]);
-      // greekGrainGrinding.appendChild(greekGrainGrindingText);
-      
-      // var greekPrice = document.createElement('p');
-      // var GreekPriceText = document.createTextNode(coffee[x][i].price);
-      // greekPrice.appendChild(GreekPriceText);
-      
-      // item.appendChild(ele);
-      // item.appendChild(greekDesc);
-      // item.appendChild(greekBlend);
-      // item.appendChild(greekGrainGrinding);
-      // item.appendChild(greekPrice);
       
       item.addEventListener('click', function() {
         document.querySelector('.productTitle').innerHTML = this.dataset.name;
-          document.querySelector('.prodOverlay').style.display = "flex";
+        document.querySelector('.productDesc').innerHTML = this.dataset.blend;
+        document.querySelector('.productDesc').innerHTML = this.dataset.description;
+        document.querySelector('.productPrice').innerHTML = this.dataset.price;
+        
+        
+        document.querySelector('.prodOverlay').style.display = "flex";
       })
       
       document.querySelector('.allProducts').appendChild(item);
     }
+  }
+  for (var a=0; a < tea.length; a++) {
+    var keys = Object.keys(tea[a]);
+    var values = Object.values(tea[a])[0];
+    for (let i=0; i < values.length; i++) {
+      var item = document.createElement('div');
+      
+      item.dataset.name = Object.values(values)[i].name;
+      item.dataset.desc = Object.values(values)[i].description;
+      item.dataset.price = Object.values(values)[i].price;
+      item.innerHTML = '';
+      item.classList.add("responsive");
+      
+      item.addEventListener('click', function() {
+        document.querySelector('.productTitle').innerHTML = this.dataset.name;
+        // document.querySelector('.productDesc').innerHTML = this.dataset.blend;
+        document.querySelector('.productDesc').innerHTML = this.dataset.description;
+        document.querySelector('.productPrice').innerHTML = this.dataset.price;
+        
+        
+        document.querySelector('.prodOverlay').style.display = "flex";
+        
+      })
+      
+    }
+    document.querySelector('.allProducts').appendChild(item);
+  }
+  for (var y=0; y < beverages.length; y++) {
+    var keys = Object.keys(beverages[y]);
+    var values = Object.values(beverages[y])[0];
+    for (let i=0; i < values.length; i++) {
+      var item = document.createElement('div');
+      
+      item.dataset.name = Object.values(values)[i].name;
+      item.dataset.desc = Object.values(values)[i].description;
+      item.dataset.price = Object.values(values)[i].price;
+      item.innerHTML = '';
+      item.classList.add("responsive");
+      
+      item.addEventListener('click', function() {
+        document.querySelector('.productTitle').innerHTML = this.dataset.name;
+        // document.querySelector('.productDesc').innerHTML = this.dataset.blend;
+        document.querySelector('.productDesc').innerHTML = this.dataset.description;
+        document.querySelector('.productPrice').innerHTML = this.dataset.price;
+        
+        
+        document.querySelector('.prodOverlay').style.display = "flex";
+        
+      })
+      
+    }
+    document.querySelector('.allProducts').appendChild(item);
+    
   }
 }
 
